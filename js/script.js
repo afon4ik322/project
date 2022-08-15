@@ -1,27 +1,29 @@
 "use strict";
 
-// alert('hello');
-// const result = confirm("Are you here?");
-// const answer = prompt('Are you 18?',"");
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
+
+const personalMovieDB = {
+    count : numberOfFilms,
+    movies : {},
+    actor : {},
+    genres: [],
+    privat: false
+
+};
+
+let firstMovie = prompt('Один из последних просмотренных фильмов?','');
+let firstMark = +prompt('На сколько оцените его?','');
+let secondMovie = prompt('Один из последних просмотренных фильмов?','');
+let secondMark = +prompt('На сколько оцените его?','');
+
+personalMovieDB.movies[firstMovie] = firstMark;
+personalMovieDB.movies[secondMovie] = secondMark;
+
+console.log(personalMovieDB);
 
 
-// let number =5;
-// const leftBorderWidth =1;
-
-// number =10;
-// console.log(number);
 
 
-// const obj = {
-//     a : 50
-// };
-
-// obj.a = 10;
 
 
-// var name = 'Ivan';
-const answers = [];
-
-answers[0] = prompt('Как ваше имя?', '');
-answers[1] = prompt('Как ваша фамилия?', '');
-answers[2] = prompt('Как ваше отчество', '');
